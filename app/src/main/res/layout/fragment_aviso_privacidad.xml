@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/borderlayout"
+    tools:context="mx.com.qrplus.qrplusaccesos.ui.AvisoPrivacidad.aviso_privacidad">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/textAviso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></me.biubiubiu.justifytext.library.JustifyTextView>
+    </ScrollView>
+
+</FrameLayout>

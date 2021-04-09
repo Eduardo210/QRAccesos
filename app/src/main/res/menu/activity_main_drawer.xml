@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/inicio"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/evento"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/user"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_resetpassword"
+            android:icon="@drawable/password"
+            android:title="@string/menu_resetpassword" />
+
+    </group>
+
+    <group android:id="@+id/group">
+
+        <item
+            android:id="@+id/navigation_subheader"
+            android:title="Información">
+            <menu>
+                <item
+                    android:id="@+id/nav_aviso"
+                    android:icon="@drawable/aviso"
+                    android:title="@string/menu_aviso" />
+                <item
+                    android:id="@+id/nav_terminos"
+                    android:icon="@drawable/terminos"
+                    android:title="@string/menu_terminoscondiciones" />
+                <item
+                    android:id="@+id/nav_acerca"
+                    android:icon="@drawable/acercade"
+                    android:title="@string/menu_acerca" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:id="@+id/group3">
+        <item
+            android:id="@+id/navigation_subheader3"
+            android:title="Finalizar">
+            <menu>
+                <item
+                    android:id="@+id/nav_cerrar"
+                    android:icon="@drawable/sesionclose"
+                    android:title="@string/menu_cerrar" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
+

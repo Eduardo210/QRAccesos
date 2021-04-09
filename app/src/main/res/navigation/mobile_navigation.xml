@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="mx.com.qrplus.qrplusaccesos.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="mx.com.qrplus.qrplusaccesos.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="mx.com.qrplus.qrplusaccesos.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="mx.com.qrplus.qrplusaccesos.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_acerca"
+        android:name="mx.com.qrplus.qrplusaccesos.ui.acerca.acercade"
+        android:label="@string/menu_acerca"
+        tools:layout="@layout/fragment_acercade" />
+    <fragment
+        android:id="@+id/nav_aviso"
+        android:name="mx.com.qrplus.qrplusaccesos.ui.AvisoPrivacidad.aviso_privacidad"
+        android:label="@string/menu_aviso"
+        tools:layout="@layout/fragment_aviso_privacidad" />
+    <fragment
+        android:id="@+id/nav_terminos"
+        android:name="mx.com.qrplus.qrplusaccesos.ui.terminos.TerminosCondiciones"
+        android:label="@string/menu_terminoscondiciones"
+        tools:layout="@layout/fragment_terminos_condiciones" />
+    <fragment
+        android:id="@+id/nav_cerrar"
+        android:name="mx.com.qrplus.qrplusaccesos.ui.cerrar.cerrar"
+        android:label="@string/menu_cerrar"
+        tools:layout="@layout/fragment_cerrar" />
+    <fragment
+        android:id="@+id/nav_resetpassword"
+        android:name="mx.com.qrplus.qrplusaccesos.ui.ResetPassword.reset_password"
+        android:label="@string/menu_resetpassword"
+        tools:layout="@layout/fragment_reset_password" />
+</navigation>
